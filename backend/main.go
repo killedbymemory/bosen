@@ -13,7 +13,7 @@ func main() {
 	e := echo.New()
 
 	const (
-		DB_USER     = "username"
+		DB_USER     = "cmsuser"
 		DB_PASSWORD = "password"
 		DB_NAME     = "cms"
 		DB_HOST     = "localhost"

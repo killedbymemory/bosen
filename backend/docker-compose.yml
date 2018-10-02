@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+  db:
+    container_name: postgres_local
+    image: postgres:alpine
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    restart: "no"
+    environment:
+      POSTGRES_DB: cms
+      POSTGRES_USER: cmsuser
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+
+volumes:
+  db_data:
