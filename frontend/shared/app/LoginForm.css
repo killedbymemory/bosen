@@ -1,0 +1,18 @@
+#loginForm .ms-Grid-row {
+  margin-bottom: 10px;
+}
+
+#loginForm .ms-Grid-row.password {
+  margin-bottom: 20px;
+}
+
+#loginForm .inline-error-message {
+  display: inline-block;
+  margin-left: 5px;
+  color: red;
+}
+
+#loginForm .inline-loading {
+  display: inline-block;
+  margin: 5px;
+}
