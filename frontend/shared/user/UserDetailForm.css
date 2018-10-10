@@ -1,0 +1,10 @@
+#form .ms-Grid-row,
+.form .ms-Grid-row {
+  margin-bottom: 10px;
+}
+
+#form .loading,
+.form .loading {
+  display: inline-block;
+  margin: 5px;
+}
