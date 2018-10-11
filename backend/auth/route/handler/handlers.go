@@ -2,9 +2,9 @@ package handler
 
 import (
 	"github.com/dgrijalva/jwt-go"
-	"github.com/killedbymemory/cms/backend/application"
-	AuthHelper "github.com/killedbymemory/cms/backend/auth/helper"
-	"github.com/killedbymemory/cms/backend/model"
+	"github.com/killedbymemory/bosen/backend/application"
+	AuthHelper "github.com/killedbymemory/bosen/backend/auth/helper"
+	"github.com/killedbymemory/bosen/backend/model"
 	"github.com/labstack/echo"
 	"github.com/satori/go.uuid"
 	"net/http"

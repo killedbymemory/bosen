@@ -2,8 +2,8 @@ package application
 
 import (
 	"database/sql"
-	"github.com/killedbymemory/cms/backend/session"
-	"github.com/killedbymemory/cms/backend/user"
+	"github.com/killedbymemory/bosen/backend/session"
+	"github.com/killedbymemory/bosen/backend/user"
 	"github.com/labstack/echo"
 )
 

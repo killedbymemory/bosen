@@ -3,7 +3,7 @@ package session
 import (
 	"database/sql"
 	"fmt"
-	"github.com/killedbymemory/cms/backend/model"
+	"github.com/killedbymemory/bosen/backend/model"
 	"github.com/satori/go.uuid"
 	"strings"
 )

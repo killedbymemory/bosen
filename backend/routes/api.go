@@ -1,10 +1,10 @@
 package routes
 
 import (
-	AuthRouteHandler "github.com/killedbymemory/cms/backend/auth/route/handler"
-	"github.com/killedbymemory/cms/backend/model"
-	SessionRouteHandler "github.com/killedbymemory/cms/backend/session/route/handler"
-	UserRouteHandler "github.com/killedbymemory/cms/backend/user/route/handler"
+	AuthRouteHandler "github.com/killedbymemory/bosen/backend/auth/route/handler"
+	"github.com/killedbymemory/bosen/backend/model"
+	SessionRouteHandler "github.com/killedbymemory/bosen/backend/session/route/handler"
+	UserRouteHandler "github.com/killedbymemory/bosen/backend/user/route/handler"
 )
 
 type RouteGroup struct{}
