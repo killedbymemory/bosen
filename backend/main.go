@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/killedbymemory/cms/backend/application"
-	"github.com/killedbymemory/cms/backend/database"
-	"github.com/killedbymemory/cms/backend/model"
-	"github.com/killedbymemory/cms/backend/routes"
+	"github.com/killedbymemory/bosen/backend/application"
+	"github.com/killedbymemory/bosen/backend/database"
+	"github.com/killedbymemory/bosen/backend/model"
+	"github.com/killedbymemory/bosen/backend/routes"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 )

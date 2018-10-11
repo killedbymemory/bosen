@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"github.com/killedbymemory/cms/backend/application"
-	"github.com/killedbymemory/cms/backend/model"
+	"github.com/killedbymemory/bosen/backend/application"
+	"github.com/killedbymemory/bosen/backend/model"
 	"github.com/labstack/echo"
 	"github.com/satori/go.uuid"
 	"net/http"
