@@ -47,11 +47,6 @@ func CreateNewSession(context echo.Context) error {
 	}
 
 	newSession := new(model.Session)
-
-	if err := context.Bind(newSession); err != nil {
-		return err
-	}
-
 	newSession.Uid = uid
 	appContext := context.(*application.ApplicationContext)
 
