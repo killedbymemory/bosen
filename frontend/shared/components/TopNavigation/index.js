@@ -149,7 +149,7 @@ const TopNavigation = ({ history, isAuthenticated, user }) => {
         <Navigation.Item
           protected
           key="persona"
-          text={isAuthenticated ? `${user.fName} ${user.lName}` : 'Guest'}
+          text={isAuthenticated ? `${user.firstName} ${user.lastName}` : 'Guest'}
           cacheKey="personaKey"
           iconProps={{
             iconName: 'Contact',

@@ -61,6 +61,12 @@ export default function getUser({ userId, token, force } = {}, onFinished) {
 
 export function getUserByToken({ token, force }, onFinished) {
   const [header, payload, signature] = token.split('.');
-  const { userId } = JSON.parse(atob(payload));
+
+  // Base64 decode unavailable on server-side
+  // TODO: Decode to UTF8 (multibytes)
+  const _atob =
+    typeof atob === 'function' ? atob : payload => new Buffer(payload, 'base64').toString('ascii');
+
+  const { 'user.uid': userId } = JSON.parse(_atob(payload));
   return getUser({ userId, token, force }, onFinished);
 }

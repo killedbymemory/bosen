@@ -13,13 +13,13 @@ function translateError({ response }) {
 }
 
 function extractToken({ data }) {
-  return data && data.token;
+  return data && data.data && data.data.token; // T_T
 }
 
 export function authenticateUser({ apiClient } = {}, sessionId, { username, password }) {
   return new Promise((resolve, reject) => {
     apiClient
-      .post('/api/account/login', { email: username, password })
+      .post(`/auth/authenticate/${sessionId}`, { username, password })
       .then(payload => resolve(extractToken(payload)), err => reject(translateError(err)));
   });
 }
