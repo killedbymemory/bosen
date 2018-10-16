@@ -66,11 +66,11 @@ class UserDetailPage extends React.Component {
     return (
       <div data-screen-id="user-detail">
         <Helmet>
-          <title>{`${user.fName} ${user.lName}`} - User Detail</title>
+          <title>{`${user.firstName} ${user.lastName}`} - User Detail</title>
         </Helmet>
 
         <h2 className="ms-font-xl">
-          <Icon iconName="Contact" /> {`${user.fName} ${user.lName}`}
+          <Icon iconName="Contact" /> {`${user.firstName} ${user.lastName}`}
         </h2>
 
         <UserDetailForm

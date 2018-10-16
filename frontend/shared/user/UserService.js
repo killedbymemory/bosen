@@ -37,8 +37,8 @@ export function list(serviceContext = {}, { limit = {} } = {}) {
         }
         items {
           id
-          fName
-          lName
+          firstName
+          lastName
           email
           createdDate
           modifiedDate
@@ -83,8 +83,8 @@ export function getUser(serviceContext = {}, { userId, token } = {}) {
     query PersonDetail($personId: String!) {
       person(id: $personId) {
         id
-        fName
-        lName
+        firstName
+        lastName
         email
         createdDate
       }
@@ -156,7 +156,7 @@ export function changePassword(serviceContext = {}, userId, passwords = {}) {
 }
 
 export function create(serviceContext = {}, userId, userInformation = {}) {
-  const { fName, lName, email, password } = userInformation;
+  const { firstName, lastName, email, password } = userInformation;
 
   const query = `
     mutation AddNewPerson($person: PersonAdd!) {
@@ -169,8 +169,8 @@ export function create(serviceContext = {}, userId, userInformation = {}) {
   const variables = {
     person: {
       id: userId,
-      fName,
-      lName,
+      firstName,
+      lastName,
       phoneNumber,
       email,
       password, // Placeholder only since it is generated on API-side
@@ -188,7 +188,7 @@ export function create(serviceContext = {}, userId, userInformation = {}) {
 }
 
 export function update(serviceContext = {}, userId, userInformation = {}) {
-  const { fName, lName, phoneNumber, email } = userInformation;
+  const { firstName, lastName, phoneNumber, email } = userInformation;
 
   const query = `
     mutation UpdatePerson($userId: String!, $person: PersonUpdate!) {
@@ -201,8 +201,8 @@ export function update(serviceContext = {}, userId, userInformation = {}) {
   const variables = {
     userId,
     person: {
-      fName,
-      lName,
+      firstName,
+      lastName,
       email,
     },
   };

@@ -53,8 +53,8 @@ class UserDetailForm extends Component {
               type="text"
               placeholder="First name"
               required
-              value={values.fName}
-              onChanged={this.handleChange('fName')}
+              value={values.firstName}
+              onChanged={this.handleChange('firstName')}
             />
           </div>
 
@@ -65,8 +65,8 @@ class UserDetailForm extends Component {
               type="text"
               placeholder="Last name"
               required
-              value={values.lName}
-              onChanged={this.handleChange('lName')}
+              value={values.lastName}
+              onChanged={this.handleChange('lastName')}
             />
           </div>
 
@@ -132,13 +132,13 @@ class UserDetailForm extends Component {
 UserDetailForm = withFormik({
   mapPropsToValues: (props) => {
     // Entity's fields
-    const fields = ['fName', 'lName', 'phoneNumber', 'email', 'password'];
+    const fields = ['firstName', 'lastName', 'phoneNumber', 'email', 'password'];
 
     const defaultValues = {
       userId: props.userId,
       errorMessage: '',
-      fName: '',
-      lName: '',
+      firstName: '',
+      lastName: '',
       phoneNumber: '',
       email: '',
       password: '',

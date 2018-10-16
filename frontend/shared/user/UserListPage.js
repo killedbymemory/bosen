@@ -49,7 +49,7 @@ class UserListPage extends React.Component {
 
     switch (column.key) {
       case 'name':
-        return <Link to={`/users/${item.id}`}>{`${item.fName} ${item.lName}`}</Link>;
+        return <Link to={`/users/${item.id}`}>{`${item.firstName} ${item.lastName}`}</Link>;
 
       case 'createdDate':
       case 'modifiedDate':
