@@ -73,7 +73,7 @@ export function getAuthenticatedUser(serviceContext = {}, { userId, token } = {}
     return data || {};
   };
 
-  return apiClient.get('/api/account/me', { headers }).then(extractUser, handleError);
+  return apiClient.get(`/users/${userId}`, { headers }).then(extractUser, handleError);
 }
 
 export function getUser(serviceContext = {}, { userId, token } = {}) {
