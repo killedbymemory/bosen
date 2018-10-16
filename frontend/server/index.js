@@ -85,7 +85,7 @@ app.use((request, response, next) => {
   return next();
 });
 
-// app.use(sessionMiddleware);
+app.use(sessionMiddleware);
 
 // The React application middleware.
 app.get('*', (request, response) => {

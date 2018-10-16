@@ -44,8 +44,8 @@ export default function reactApplicationMiddleware(request, response) {
   const store = createStore({ serviceContext, reducers: { reduxAsyncConnect } });
 
   // Store session identifier in state store
-  // const sessionId = request.cookies && request.cookies.sessionId;
-  // store.dispatch(SessionAction.initSessionIdFromCookie(sessionId));
+  const sessionId = request.cookies && request.cookies.sessionId;
+  store.dispatch(SessionAction.initSessionIdFromCookie(sessionId));
 
   const token = request.cookies.token;
   const authenticate = () =>
