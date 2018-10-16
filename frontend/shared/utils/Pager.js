@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Breadcrumb } from 'office-ui-fabric-react/lib-commonjs/Breadcrumb';
+import { Breadcrumb } from 'office-ui-fabric-react';
 import style from './Pager.css';
 
 export default class Pager extends React.Component {

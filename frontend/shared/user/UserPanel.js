@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Panel, PanelType } from 'office-ui-fabric-react/lib-commonjs/Panel';
+import { Panel, PanelType } from 'office-ui-fabric-react';
 import UserDetailPage from './UserDetailPage';
 
 const UserPanel = () => (

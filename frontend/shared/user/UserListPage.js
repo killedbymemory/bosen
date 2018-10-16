@@ -2,10 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { asyncConnect } from 'redux-connect';
-import {
-  DetailsList,
-  DetailsListLayoutMode,
-} from 'office-ui-fabric-react/lib-commonjs/DetailsList';
+import { DetailsList, DetailsListLayoutMode } from 'office-ui-fabric-react';
 import qs from 'query-string';
 import UserService from './UserService';
 import Pager from '../../shared/utils/Pager';

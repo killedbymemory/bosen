@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Label } from 'office-ui-fabric-react/lib-commonjs/Label';
+import { Label } from 'office-ui-fabric-react';
 import { Link } from 'react-router-dom';
 
 const withSession = connect(state => ({ isAuthenticated: state.user.isAuthenticated }));
