@@ -1,8 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { asyncConnect } from 'redux-connect';
-import { Icon } from 'office-ui-fabric-react/lib-commonjs/Icon';
-import { Label } from 'office-ui-fabric-react/lib-commonjs/Label';
+import { Icon } from 'office-ui-fabric-react';
+import { Label } from 'office-ui-fabric-react';
 import { withServiceContext } from '../../shared/serviceContext';
 import UserService from './UserService';
 import UserPasswordForm from './UserPasswordForm';

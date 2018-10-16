@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Label } from 'office-ui-fabric-react/lib-commonjs/Label';
-import { TextField } from 'office-ui-fabric-react/lib-commonjs/TextField';
-import { PrimaryButton as Button } from 'office-ui-fabric-react/lib-commonjs/Button';
-import { Spinner, SpinnerSize } from 'office-ui-fabric-react/lib-commonjs/Spinner';
+import { Label } from 'office-ui-fabric-react';
+import { TextField } from 'office-ui-fabric-react';
+import { PrimaryButton as Button } from 'office-ui-fabric-react';
+import { Spinner, SpinnerSize } from 'office-ui-fabric-react';
 import { withFormik } from 'formik';
 import style from './UserDetailForm.css';
 

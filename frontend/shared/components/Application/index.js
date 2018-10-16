@@ -2,7 +2,7 @@ import React from 'react';
 import Switch from 'react-router-dom/Switch';
 import Route from 'react-router-dom/Route';
 import Helmet from 'react-helmet';
-import { Fabric } from 'office-ui-fabric-react/lib-commonjs/Fabric';
+import { Fabric } from 'office-ui-fabric-react';
 import config from '../../../config';
 import { Routes } from '../../../shared/routes';
 import TopNavigation from '../../../shared/components/TopNavigation';

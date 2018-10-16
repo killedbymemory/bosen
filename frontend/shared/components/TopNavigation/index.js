@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { CommandBar } from 'office-ui-fabric-react/lib-commonjs/CommandBar';
+import { CommandBar } from 'office-ui-fabric-react';
 
 // See: https://github.com/OfficeDev/office-ui-fabric-react/wiki/Using-icons
+// Commented because it produces error on SSR:
+// import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
+// But importing ES5 code works just fine:
 import { initializeIcons } from 'office-ui-fabric-react/lib-commonjs/Icons';
 
 initializeIcons();
